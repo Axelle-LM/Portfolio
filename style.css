@@ -1,0 +1,208 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* HOMEPAGE */
+
+body {
+    height: 100vh;
+    width: auto;
+    background-color: #d6c0c0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Protest', Fallback, sans-serif;
+    color: #6b2f39;
+    font-size: 10vh;
+}
+
+.accueil {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil>p {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h2 {
+    font-family: 'Miroles', Fallback, sans-serif;
+    font-size: 5vh;
+}
+
+p {
+    font-family: 'Mangiola', Fallback, sans-serif;
+    font-size: larger;
+}
+
+.pres {
+    height: 100vh;
+}
+
+.pres>h2 {
+    position: relative;
+    left: 20vw;
+    margin-bottom: 3vh;
+}
+
+.pres>p {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+    margin-bottom: 10vh;
+}
+
+.competence {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 35vw 0 35vw;
+}
+
+
+
+
+
+.projet-enfoire h2 {
+    margin-bottom: 8vh;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes égales */
+    grid-template-rows: auto auto auto;
+    /* Trois lignes automatiques */
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+    /* Structure de la grille correspondant à ton schéma */
+    gap: 10px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+section>div:nth-child(1) {
+    grid-area: img1;
+}
+
+section>div:nth-child(2) {
+    grid-area: img2;
+}
+
+section>div:nth-child(3) {
+    grid-area: img3;
+}
+
+section>div:nth-child(4) {
+    grid-area: img4;
+}
+
+section>div:nth-child(5) {
+    grid-area: img5;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+.projet {
+    position: relative;
+    /* Assure que le hover soit bien positionné */
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bb8f98e2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projet:hover .hover {
+    opacity: 1;
+}
+
+/* COMPLOT */
+
+.heading {
+    background-image: linear-gradient(#bb8f9851, #d6c0c054), url(/img/testing.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.heading h1 {
+    text-align: center;
+    color: white;
+}
+
+.heading p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.info-proj {
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.info-proj h2 {
+    margin-bottom: 2vh;
+}
+
+.info-proj p {
+    margin-bottom: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Protest';
+    src: url('/fonts/Protest\ Demo.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'Mangiola';
+    src: url('/fonts/Mangiola-Regular.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'Miroles';
+    src: url('/fonts/MIROLES.woff2') format('woff2'),
+}

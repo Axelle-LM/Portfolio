@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="homepage">
+
+    <div class="accueil">
+        <h1>Développeuse Web</h1>
+        <p>Portfolio // Axelle Nigon</p>
+    </div>
+
+    <div class="pres">
+
+        <h2>Bonjour...</h2>
+        <p>Je m'appelle Axelle, ancienne étudiante à l'IUT de Gustave Eiffel de Champs-sur-Marne, où j'ai suivi le
+            parcours MMI (Métiers du Multimédia et de l'Internet) avec une spécialisation en développement web.
+            Actuellement pré-admise à l'IIM Digital School de Nanterre pour un Mastère Lead Développeur Fullstack,
+            je suis à la recherche d'une alternance sur Paris ou Montpellier. Curieuse et à l'écoute,
+            je suis déterminée à continuer d'apprendre et à évoluer dans mon domaine.</p>
+
+        <h2>Compétences</h2>
+
+        <div class="competence">
+            <div>
+                <p>Langages</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div>
+                <p>Frameworks</p>
+                <ul>
+                    <li>Symfony</li>
+                    <li>React.js</li>
+                    <li>Three.js</li>
+                    <li>Pixi.js</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="projet-enfoire">
+        <h2>Mes projets</h2>
+        <section>
+            <div class="projet">
+                <a href="projet-template.html" class="clickable-link" data-name="escape-game"><img src="/img/escape.png"
+                        alt="">
+                    <div class="hover">
+                        <p>Escape Game</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projet">
+                <a href="projet-template.html" class="clickable-link" data-name="combat-personnage"><img
+                        src="/img/phppoo.png" alt="">
+                    <div class="hover">
+                        <p>Combat de personnage</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projet">
+                <a href="projet-template.html" class="clickable-link" data-name="visualisation-sonore"><img
+                        src="/img/audio.png" alt="">
+                    <div class="hover">
+                        <p>Visualisation sonore</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projet">
+                <a href="projet-template.html" class="clickable-link" data-name="pendu"><img src="/img/pendu.png"
+                        alt="">
+                    <div class="hover">
+                        <p>Jeu du pendu</p>
+                    </div>
+                </a>
+            </div>
+
+            <!--<div class="projet">
+                <a href="projet-template.html" class="clickable-link" data-name="expo"><img src="/img/expo.png" alt="">
+                    <div class="hover">
+                        <p>Exposition sur les femmes peintres</p>
+                    </div>
+                </a>
+            </div>-->
+        </section>
+    </div>
+</body>
+
+<script>
+    // Sélectionner tous les liens avec la classe "clickable-link"
+    const links = document.querySelectorAll('.clickable-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            const linkName = this.getAttribute('data-name');
+            // Stocker le nom du lien cliqué dans le localStorage
+            localStorage.setItem('clickedLinkName', linkName);
+        });
+    });
+</script>
+
+</html>
