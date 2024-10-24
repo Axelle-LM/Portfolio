@@ -194,15 +194,15 @@ section img {
 
 @font-face {
     font-family: 'Protest';
-    src: url('/fonts/Protest\ Demo.woff2') format('woff2'),
+    src: url('fonts/Protest\ Demo.woff2') format('woff2'),
 }
 
 @font-face {
     font-family: 'Mangiola';
-    src: url('/fonts/Mangiola-Regular.woff2') format('woff2'),
+    src: url('fonts/Mangiola-Regular.woff2') format('woff2'),
 }
 
 @font-face {
     font-family: 'Miroles';
-    src: url('/fonts/MIROLES.woff2') format('woff2'),
+    src: url('fonts/MIROLES.woff2') format('woff2'),
 }
