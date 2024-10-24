@@ -80,14 +80,11 @@ p {
 section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Deux colonnes égales */
     grid-template-rows: auto auto auto;
-    /* Trois lignes automatiques */
     grid-template-areas:
         "img1 img2"
         "img3 img4"
         "img5 img6";
-    /* Structure de la grille correspondant à ton schéma */
     gap: 10px;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -120,7 +117,6 @@ section img {
 
 .projet {
     position: relative;
-    /* Assure que le hover soit bien positionné */
 }
 
 .hover {
@@ -145,7 +141,7 @@ section img {
 /* COMPLOT */
 
 .heading {
-    background-image: linear-gradient(#bb8f9851, #d6c0c054), url(/img/testing.jpg);
+    background-image: linear-gradient(#bb8f9851, #d6c0c054), url(img/testing.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     width: auto;
@@ -194,7 +190,7 @@ section img {
 
 @font-face {
     font-family: 'Protest';
-    src: url('fonts/Protest Demo.woff2') format('woff2'),
+    src: url('fonts/Protest-Demo.woff2') format('woff2'),
 }
 
 @font-face {
