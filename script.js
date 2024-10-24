@@ -19,7 +19,7 @@ fetch('data.json')
                     }
                 }
             }
-            document.querySelector(".heading").style.backgroundImage = window.getComputedStyle(document.querySelector(".heading")).backgroundImage.replace(/url\(["']?[^"']*["']?\)/, `url("${jsonData[clickedLinkName]["img_background"]}")`);
+            document.querySelector(".heading").style.backgroundImage = window.getComputedStyle(document.querySelector(".heading")).backgroundImage.replace(/url\(["']?[^"')]*["']?\)/, `url("${jsonData[clickedLinkName]["img_background"]}")`);
         }
         /*
             document.getElementsByClassName('titre-projet')[0].innerHTML = jsonData[clickedLinkName]["name"];
