@@ -21,7 +21,7 @@ fetch('data.json')
             }
             if (jsonData[clickedLinkName].img_background) {
                 const backgroundImageUrl = jsonData[clickedLinkName].img_background;
-                document.querySelector(".heading").style.backgroundImage = `linear-gradient(#bb8f9851, #d6c0c054), url(${backgroundImageUrl})`;
+                document.querySelector(".heading").style.backgroundImage = `url(${backgroundImageUrl})`;
             }
         }
         /*
