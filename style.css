@@ -166,6 +166,7 @@ section img {
 .info-proj {
     margin-left: 25vw;
     margin-right: 25vw;
+    margin-bottom: 10vh;
 }
 
 .info-proj h2 {
@@ -174,10 +175,6 @@ section img {
 
 .info-proj p {
     margin-bottom: 8vh;
-}
-
-.technologie {
-    margin-bottom: 10vh;
 }
 
 
