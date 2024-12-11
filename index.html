@@ -82,8 +82,7 @@
             </div>
 
             <div class="projet">
-                <a href="projet-template.html" class="clickable-link" data-name="pendu"><img src="img/pendu.png"
-                        alt="">
+                <a href="projet-template.html" class="clickable-link" data-name="pendu"><img src="img/pendu.png" alt="">
                     <div class="hover">
                         <p>Jeu du pendu</p>
                     </div>
@@ -102,13 +101,12 @@
 </body>
 
 <script>
-    // Sélectionner tous les liens avec la classe "clickable-link"
     const links = document.querySelectorAll('.clickable-link');
 
     links.forEach(link => {
         link.addEventListener('click', function (event) {
             const linkName = this.getAttribute('data-name');
-            // Stocker le nom du lien cliqué dans le localStorage
+
             localStorage.setItem('clickedLinkName', linkName);
         });
     });

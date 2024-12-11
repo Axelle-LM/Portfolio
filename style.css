@@ -141,8 +141,6 @@ section img {
 /* COMPLOT */
 
 .heading {
-    background-image: linear-gradient(#bb8f9851, #d6c0c054), url(img/testing.jpg);
-    background-repeat: no-repeat;
     height: 100vh;
     width: auto;
     display: flex;
@@ -177,7 +175,7 @@ section img {
 }
 
 .info-proj .technologie {
-     margin-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
 

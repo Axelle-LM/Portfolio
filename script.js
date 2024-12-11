@@ -1,11 +1,8 @@
-// Récupérer le nom du lien cliqué depuis le localStorage
 const clickedLinkName = localStorage.getItem('clickedLinkName');
 
-// Lire le fichier data.json avec fetch
 fetch('data.json')
     .then(response => response.json()) // Convertir la réponse en JSON
     .then(jsonData => {
-        // Vérifier si clickedLinkName existe et est dans jsonData
         if (clickedLinkName && jsonData[clickedLinkName]) {
             for (i of ["name", "contexte", "presentation", "role", "technologie"]) {
                 if (jsonData[clickedLinkName][i] != null) {
@@ -21,7 +18,8 @@ fetch('data.json')
             }
             if (jsonData[clickedLinkName].img_background) {
                 const backgroundImageUrl = jsonData[clickedLinkName].img_background;
-                document.querySelector(".heading").style.backgroundImage = `url(${backgroundImageUrl})`;
+                const gradient = "linear-gradient(#bb8f9851, #d6c0c054)";
+                document.querySelector(".heading").style.backgroundImage = `${gradient}, url(${backgroundImageUrl})`;
             }
         }
         /*
