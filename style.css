@@ -48,6 +48,14 @@ h2 {
     font-size: 5vh;
 }
 
+h3 {
+    font-family: 'Mangiola', Fallback, sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 25vw;
+    margin-bottom: 3vh;
+}
+
 p {
     font-family: 'Mangiola', Fallback, sans-serif;
     font-size: larger;
@@ -70,12 +78,47 @@ p {
     margin-bottom: 10vh;
 }
 
+
+
+.contain-comp {
+    height: 100vh;
+}
+
+.contain-comp>h2 {
+    position: relative;
+    left: 20vw;
+    margin-bottom: 3vh;
+}
+
+
+.savoir-etre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15vh;
+
+}
+
+.savoir-etre>p {
+    padding: 10px;
+    background-color: #6b2f39;
+    color: white;
+    border: #6b2f39;
+    border-radius: 50px;
+}
+
+
 .competence {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    margin: 0 35vw 0 35vw;
+    flex-wrap: wrap;
+    margin: 0 15vw 0 15vw;
+}
+
+.competence>img {
+    width: 80px;
+    height: auto;
 }
 
 
